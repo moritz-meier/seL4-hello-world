@@ -16,3 +16,6 @@
 [submodule "projects/util_libs"]
 	path = projects/util_libs
 	url = https://github.com/seL4/util_libs.git
+[submodule "corrosion"]
+	path = corrosion
+	url = https://github.com/corrosion-rs/corrosion.git
