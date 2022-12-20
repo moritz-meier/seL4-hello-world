@@ -20,6 +20,4 @@ if(NOT found_all_cmake)
 endif()
 
 # Customization
-ApplyCommonReleaseVerificationSettings(FALSE FALSE)
-ApplyCommonSimulationSettings(${KernelSel4Arch})
 GenerateSimulateScript()

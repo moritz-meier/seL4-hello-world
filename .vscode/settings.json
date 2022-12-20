@@ -1,5 +1,8 @@
 {
 	"cmake.configureArgs": [
+		"-DPLATFORM=zynq7000",
+		"-DRELEASE=FALSE",
+		"-DVERIFICATION=FALSE",
 		"-DCROSS_COMPILER_PREFIX=arm-linux-gnueabi-",
 		"-DCMAKE_TOOLCHAIN_FILE=../kernel/gcc.cmake",
 	]
