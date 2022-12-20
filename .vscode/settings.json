@@ -5,5 +5,9 @@
 		"-DVERIFICATION=FALSE",
 		"-DCROSS_COMPILER_PREFIX=arm-linux-gnueabi-",
 		"-DCMAKE_TOOLCHAIN_FILE=../kernel/gcc.cmake",
+		"-DRust_CARGO_TARGET=armv7-unknown-linux-musleabi"
+	],
+	"rust-analyzer.linkedProjects": [
+		"projects/rust-hello-world/Cargo.toml"
 	]
 }
