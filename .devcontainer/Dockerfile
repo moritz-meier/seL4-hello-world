@@ -22,9 +22,11 @@ RUN sudo apt-get install -y clangd-13 && \
 	curl -sSL https://get.haskellstack.org/ | sh && \
 	pip install aenum ordered_set plyplus pyelftools sortedcontainers
 
-RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
+RUN curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y \
+	--no-modify-path \
+	--component clippy rust-src rust-analyzer \
+	--target armv7-unknown-linux-musleabi \
+	--target armv7-unknown-linux-musleabihf \
+	--target aarch64-unknown-linux-musl
 
-RUN git clone https://github.com/corrosion-rs/corrosion.git /tmp/corrosion && \
-	cmake -S /tmp/corrosion -B /tmp/corrosion/build -DCMAKE_BUILD_TYPE=Release && \
-	cmake --build /tmp/corrosion/build --config Release && \
-	sudo cmake --install /tmp/corrosion/build --config Release
+ENV PATH="$PATH:/home/${USERNAME}/.cargo/bin"

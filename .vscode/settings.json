@@ -1,0 +1,6 @@
+{
+	"cmake.configureArgs": [
+		"-DCROSS_COMPILER_PREFIX=arm-linux-gnueabi-",
+		"-DCMAKE_TOOLCHAIN_FILE=../kernel/gcc.cmake",
+	]
+}
