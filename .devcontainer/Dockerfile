@@ -19,6 +19,7 @@ USER ${USERNAME}
 
 RUN sudo apt-get install -y clangd-13 && \
 	sudo update-alternatives --install /usr/bin/clangd clangd /usr/bin/clangd-13 100 && \
+	sudo update-alternatives --install /usr/bin/python python /usr/bin/python3 100 && \
 	curl -sSL https://get.haskellstack.org/ | sh && \
 	pip install aenum ordered_set plyplus pyelftools sortedcontainers
 
