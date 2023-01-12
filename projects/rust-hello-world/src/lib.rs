@@ -14,7 +14,7 @@ use libc::printf;
 #[no_mangle]
 pub extern "C" fn rust_entry() -> i32 {
     unsafe {
-        printf("Hello World, from Rust!!!\n\0".as_ptr()); // null terminator
+        printf("Hello World, from Rust!!!\n\0".as_ptr());
     }
 
     0
