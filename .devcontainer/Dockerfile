@@ -1,4 +1,4 @@
-ARG SLE4_VERSION="2022_12_08"
+ARG SLE4_VERSION="2023_01_12"
 FROM docker.io/trustworthysystems/sel4:${SLE4_VERSION}
 
 ARG USERNAME=vscode

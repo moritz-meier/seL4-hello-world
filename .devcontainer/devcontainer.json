@@ -3,7 +3,7 @@
 	"build": {
 		"dockerfile": "Dockerfile",
 		"args": {
-			//"SLE4_VERSION": "2022_12_08",
+			//"SLE4_VERSION": "2023_01_12",
 			//"USERNAME": "vscode",
 			//"USER_UID": "1000",
 			//"USER_GID": "1000"
