@@ -1,6 +1,6 @@
 {
 	"cmake.configureArgs": [
-		"-DPLATFORM=zynq7000",
+		"-DPLATFORM=stm32mp1",
 		"-DRELEASE=FALSE",
 		"-DVERIFICATION=FALSE",
 		"-DCROSS_COMPILER_PREFIX=arm-linux-gnueabi-",
