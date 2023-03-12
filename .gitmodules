@@ -3,7 +3,7 @@
 	url = https://github.com/moritz-meier/seL4.git
 [submodule "tools"]
 	path = tools
-	url = https://github.com/seL4/seL4_tools.git
+	url = https://github.com/moritz-meier/seL4_tools.git
 [submodule "projects/musllibc"]
 	path = projects/musllibc
 	url = https://github.com/seL4/musllibc.git
@@ -15,4 +15,4 @@
 	url = https://github.com/seL4/seL4runtime.git
 [submodule "projects/util_libs"]
 	path = projects/util_libs
-	url = https://github.com/seL4/util_libs.git
+	url = https://github.com/moritz-meier/util_libs.git
